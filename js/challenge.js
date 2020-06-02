@@ -49,15 +49,15 @@ pause.addEventListener('click', function(){
     }
 });
 
-    let comment = document.getElementById("comment-input");
-    let submit = document.getElementById("submit");
-    let commentsArea = document.getElementById("list");
+    const comment = document.getElementById("comment-input");
+    const submit = document.getElementById("submit");
+    const commentsArea = document.getElementById("list");
 
     submit.addEventListener("click", function(e) {
         e.preventDefault();
-        let pTag = document.createElement("P");
+        const pComment = document.createElement("P");
         console.log(comment.value);
-        pTag.innerText = comment.value;
-        commentsArea.appendChild(pTag);
+        pComment.innerText = comment.value;
+        commentsArea.appendChild(pComment);
         comment.value = "";
     });
